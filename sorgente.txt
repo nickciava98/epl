@@ -1,1 +1,92 @@
-ujo x=22;
+/* Esperanto Programming Language
+ * Copyright (c) 2014 Niccolò Ciavarella. All rights reserved.
+*/
+
+  ujo  --> Variable declaration (int, float, string, boolean)
+  
+   Example:
+       int     --> ujo x = 1;
+       float   --> ujo x = 1.2;
+       String  --> ujo x = "testo";
+       boolean --> ujo x = jesa || ujo y = neja;
+   
+   
+  hir  --> Input 
+  
+   Example:
+       hir x;
+  
+  
+  ros  --> Output
+  
+   Example:
+       ros x;
+  
+  
+  kapo --> Main
+  
+   Example:
+       kapo
+           1. ... ;
+           2. ... ;
+           3. ... ;            
+           4. ... ;
+       konk; 
+  
+  
+  se   --> If
+  amse --> Else-if
+  alim --> Else
+ 
+   Example 1:
+       se x > y
+           1. ... ;
+           2. ... ;
+           3. ... ;            
+           4. ... ;
+       konk;
+ 
+   Example 2:
+       se x > y
+           1. ... ;
+           2. ... ;
+           3. ... ;            
+           4. ... ;
+       alim
+           5. ... ;
+           6. ... ;
+           7. ... ;            
+           8. ... ;
+       konk;
+ 
+ 
+  por  --> For
+  
+   Example:
+       por 9
+           1. ... ;
+           2. ... ;
+           3. ... ;            
+           4. ... ;
+       konk;
+  
+  
+  gis  --> While   
+  
+   Example:
+       gis x > y
+           1. ... ;
+           2. ... ;
+           3. ... ;            
+           4. ... ;
+       konk;
+  
+  
+  dum  --> Do-while
+  
+   Example:
+           1. ... ;
+           2. ... ;
+           3. ... ;            
+           4. ... ;
+       dum x > y;

@@ -7,7 +7,6 @@ import java.io.IOException;
 
 public class Source 
 {
-
     public static String code; //Rigo (completo da scomporre)
     public static String function; //Comando
     public static String operator; //Operatore
@@ -25,25 +24,27 @@ public class Source
                                      'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '0', '1',
                                      '2', '3', '4', '5', '6', '7', '8', '9'};
     public static String command[] = {"ujo", "hir", "ros", "kapo", "se", "alim", "por", "gis", "*", "dum", "konk"};
-    public static String path1="sorgente.txt", path2="java.txt", write="", read="";    
+    public static String path1 = "sorgente.txt", path2 = "java.txt", write = "", read = "";    
     
     public static void main(String[] args) throws IOException
     {  
-        File f=new File(path1);
-        FileReader fr=new FileReader(f);
-        BufferedReader br=new BufferedReader(fr);
-        File f2=new File(path2);
+        File f = new File(path1);
+        FileReader fr = new FileReader(f);
+        BufferedReader br = new BufferedReader(fr);
+        File f2 = new File(path2);
         FileWriter fw = new FileWriter(f2, true); 
         
-     //   fr.open();
+        //   fr.open();
         
         function = "";
         operator = "";
         word1 = "";
         word2 = "";
         code = "";
-        code=br.readLine();
-       // code = "ujo x = 22;";
+        code = br.readLine();
+        
+        // code = "ujo x = 22;";
+        
         while(!code.equals(""))
         {        
             if(code.charAt((code.length() - 1)) == ';') 
@@ -785,7 +786,7 @@ public class Source
         
             code = "";
             code=br.readLine();
-           // code=read;
+            // code=read;
         }
         
         fw.close();
